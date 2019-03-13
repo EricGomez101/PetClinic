@@ -17,7 +17,7 @@
 
 	<groupId>app</groupId>
 	<artifactId>pet-clinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>pet-clinic</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -40,9 +40,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
-  <scm>
-    <tag>pet-clinic-0.0.1</tag>
-  </scm>
 </project>
