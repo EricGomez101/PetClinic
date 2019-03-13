@@ -17,7 +17,7 @@
 
 	<groupId>app</groupId>
 	<artifactId>pet-clinic</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>pet-clinic</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -36,11 +36,12 @@
 				<configuration>
 					<goals>install</goals>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<checkModificationExcludes>
-						<checkModificationExclude>pom.xml</checkModificationExclude>
-					</checkModificationExcludes>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	<scm>
+		<developerConnection>scm:git:git@github.com:EricGomez101/pet-clinic.git</developerConnection>
+		<tag>pet-clinic-0.0.2</tag>
+	</scm>
 </project>
