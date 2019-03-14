@@ -15,10 +15,10 @@ public class DataInit implements CommandLineRunner
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataInit()
+    public DataInit(OwnerService ownerService, VetService vetService)
     {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
