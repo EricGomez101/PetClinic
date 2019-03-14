@@ -1,16 +1,22 @@
 package app.petclinic.services.map;
 
 import app.petclinic.models.Owner;
-import app.petclinic.services.CrudService;
+import app.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long>
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService
 {
     @Override
     public Set<Owner> findAll()
     {
         return super.findAll();
+    }
+
+    @Override
+    public Owner findByLastName(String lname)
+    {
+        return null;
     }
 
     @Override
