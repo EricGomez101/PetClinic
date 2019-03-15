@@ -4,8 +4,6 @@ import app.petclinic.models.Owner;
 import app.petclinic.models.Vet;
 import app.petclinic.services.OwnerService;
 import app.petclinic.services.VetService;
-import app.petclinic.services.map.OwnerServiceMap;
-import app.petclinic.services.map.VetServiceMap;
 import org.springframework.stereotype.Component;
 import org.springframework.boot.CommandLineRunner;
 
