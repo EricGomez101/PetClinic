@@ -1,1 +1,5 @@
 app/petclinic/PetClinicApplication.class
+app/petclinic/controllers/IndexController.class
+app/petclinic/controllers/VetController.class
+app/petclinic/controllers/OwnerController.class
+app/petclinic/bootstrap/DataInit.class

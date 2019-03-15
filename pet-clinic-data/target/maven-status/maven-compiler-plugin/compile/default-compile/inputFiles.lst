@@ -1,5 +1,14 @@
-/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/Person.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/Owner.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/OwnerService.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/CrudService.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/Vet.java
-/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/Pet.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/map/OwnerServiceMap.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/map/VetServiceMap.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/PetType.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/VetService.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/Person.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/map/AbstractMapService.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/PetService.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/Pet.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/services/map/PetServiceMap.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-data/src/main/java/app/petclinic/models/BaseEntity.java
