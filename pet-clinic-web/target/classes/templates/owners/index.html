@@ -5,24 +5,24 @@
     <title>List of Owners</title>
 </head>
 <body>
-    <h1> A list of owners..</h1>
+<h1> A list of owners..</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="owner : ${owners}">
-                <td th:text="${owner.id}">1</td>
-                <td th:text="${owner.fname}">first name</td>
-                <td th:text="${owner.lname}">last name</td>
-            </tr>
-        </tbody>
-    </table>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="owner : ${owners}">
+            <td th:text="${owner.id}">1</td>
+            <td th:text="${owner.fname}">first name</td>
+            <td th:text="${owner.lname}">last name</td>
+        </tr>
+    </tbody>
+</table>
 
 </body>
 </html>
