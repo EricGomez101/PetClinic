@@ -8,6 +8,7 @@ public class Person extends BaseEntity
 {
     @Column(name = "first_name")
     private String fname;
+
     @Column(name = "last_name")
     private String lname;
 
