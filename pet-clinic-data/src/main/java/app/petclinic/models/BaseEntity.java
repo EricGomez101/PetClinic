@@ -1,10 +1,15 @@
 package app.petclinic.models;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
+@MappedSuperclass
 public class BaseEntity implements Serializable
 {
-    private Long id;
+    private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long id;
 
     public Long getId()
     {
