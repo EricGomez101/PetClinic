@@ -1,10 +1,7 @@
 package app.petclinic.bootstrap;
 
 import app.petclinic.models.*;
-import app.petclinic.services.OwnerService;
-import app.petclinic.services.PetTypeSevice;
-import app.petclinic.services.SpecialtyService;
-import app.petclinic.services.VetService;
+import app.petclinic.services.*;
 import org.springframework.stereotype.Component;
 import org.springframework.boot.CommandLineRunner;
 
@@ -17,13 +14,15 @@ public class DataInit implements CommandLineRunner
     private final VetService vetService;
     private final PetTypeSevice petTypeSevice;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
-    public DataInit(OwnerService ownerService, VetService vetService, PetTypeSevice petTypeSevice, SpecialtyService specialtyService)
+    public DataInit(OwnerService ownerService, VetService vetService, PetTypeSevice petTypeSevice, SpecialtyService specialtyService, VisitService visitService)
     {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeSevice = petTypeSevice;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -95,6 +94,14 @@ public class DataInit implements CommandLineRunner
 
         ownerService.save(owner2);
 
+        // adding a visit for fionas cat.
+        Visit catVisit = new Visit();
+        catVisit.setPet(fionasPet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy Kitty");
+
+        visitService.save(catVisit);
+
         System.out.println("Loaded Owners...");
 
         Vet vet1 = new Vet();
@@ -112,5 +119,6 @@ public class DataInit implements CommandLineRunner
         vetService.save(vet2);
 
         System.out.println("Loaded Vets...");
+
     }
 }
