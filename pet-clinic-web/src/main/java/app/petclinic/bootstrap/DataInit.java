@@ -43,7 +43,7 @@ public class DataInit implements CommandLineRunner
         PetType savedDog = petTypeSevice.save(dog);
 
         PetType cat = new PetType();
-        dog.setName("Cat");
+        cat.setName("Cat");
         PetType savedCat = petTypeSevice.save(cat);
 
         System.out.println("Loaded PetType's...");
