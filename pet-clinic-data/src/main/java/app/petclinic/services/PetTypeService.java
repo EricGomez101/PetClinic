@@ -2,7 +2,7 @@ package app.petclinic.services;
 
 import app.petclinic.models.PetType;
 
-public interface PetTypeSevice extends CrudService<PetType, Long>
+public interface PetTypeService extends CrudService<PetType, Long>
 {
 
 }

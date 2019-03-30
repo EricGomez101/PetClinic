@@ -4,7 +4,7 @@ import app.petclinic.models.Owner;
 import app.petclinic.models.PetType;
 import app.petclinic.services.OwnerService;
 import app.petclinic.services.PetService;
-import app.petclinic.services.PetTypeSevice;
+import app.petclinic.services.PetTypeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Collection;
-import java.util.Set;
 
 @Controller
 @RequestMapping("/owners/{id}")
@@ -23,19 +22,19 @@ public class PetController
 
     private final OwnerService ownerService;
     private final PetService petService;
-    private final PetTypeSevice petTypeSevice;
+    private final PetTypeService petTypeService;
 
-    public PetController(OwnerService ownerService, PetService petService, PetTypeSevice petTypeSevice)
+    public PetController(OwnerService ownerService, PetService petService, PetTypeService petTypeService)
     {
         this.ownerService = ownerService;
         this.petService = petService;
-        this.petTypeSevice = petTypeSevice;
+        this.petTypeService = petTypeService;
     }
 
     @ModelAttribute("types")
     public Collection<PetType> populatePetTypes()
     {
-        return petTypeSevice.findAll();
+        return petTypeService.findAll();
     }
 
     @ModelAttribute("owner")
@@ -45,7 +44,7 @@ public class PetController
     }
 
     @InitBinder("owner")
-    public void initOnwerBinder(WebDataBinder dataBinder)
+    public void initOwnerBinder(WebDataBinder dataBinder)
     {
         dataBinder.setDisallowedFields("id");
     }

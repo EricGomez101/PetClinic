@@ -12,15 +12,15 @@ public class DataInit implements CommandLineRunner
 {
     private final OwnerService ownerService;
     private final VetService vetService;
-    private final PetTypeSevice petTypeSevice;
+    private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
     private final VisitService visitService;
 
-    public DataInit(OwnerService ownerService, VetService vetService, PetTypeSevice petTypeSevice, SpecialtyService specialtyService, VisitService visitService)
+    public DataInit(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService)
     {
         this.ownerService = ownerService;
         this.vetService = vetService;
-        this.petTypeSevice = petTypeSevice;
+        this.petTypeService = petTypeService;
         this.specialtyService = specialtyService;
         this.visitService = visitService;
     }
@@ -28,7 +28,7 @@ public class DataInit implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception
     {
-        int count = petTypeSevice.findAll().size();
+        int count = petTypeService.findAll().size();
 
         if (count == 0)
         {
@@ -40,11 +40,11 @@ public class DataInit implements CommandLineRunner
     {
         PetType dog = new PetType();
         dog.setName("Dog");
-        PetType savedDog = petTypeSevice.save(dog);
+        PetType savedDog = petTypeService.save(dog);
 
         PetType cat = new PetType();
         cat.setName("Cat");
-        PetType savedCat = petTypeSevice.save(cat);
+        PetType savedCat = petTypeService.save(cat);
 
         System.out.println("Loaded PetType's...");
 

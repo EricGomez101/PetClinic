@@ -2,7 +2,7 @@ package app.petclinic.services.springdatajpa;
 
 import app.petclinic.models.PetType;
 import app.petclinic.repositories.PetTypeRepository;
-import app.petclinic.services.PetTypeSevice;
+import app.petclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Service
 @Profile("jpa")
-public class PetTypeJPAService implements PetTypeSevice
+public class PetTypeJPAService implements PetTypeService
 {
     private final PetTypeRepository petTypeRepository;
 
