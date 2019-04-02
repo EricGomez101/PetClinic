@@ -21,13 +21,15 @@ public class VisitController
     private final PetService petService;
 
 
-    public VisitController(VisitService visitService, PetService petService) {
+    public VisitController(VisitService visitService, PetService petService)
+    {
         this.visitService = visitService;
         this.petService = petService;
     }
 
     @InitBinder
-    public void setDataBinder(WebDataBinder dataBinder) {
+    public void setDataBinder(WebDataBinder dataBinder)
+    {
 
         dataBinder.setDisallowedFields("id");
 
@@ -51,7 +53,8 @@ public class VisitController
      * @return Pet
      */
     @ModelAttribute("visit")
-    public Visit loadPetWithVisit(@PathVariable Long petId, Model model) {
+    public Visit loadPetWithVisit(@PathVariable Long petId, Model model)
+    {
         Pet pet = petService.findById(petId);
         model.addAttribute("pet", pet);
         Visit visit = new Visit();
@@ -62,16 +65,20 @@ public class VisitController
 
     // Spring MVC calls method loadPetWithVisit(...) before initNewVisitForm is called
     @GetMapping("/owners/*/pets/{petId}/visits/new")
-    public String initNewVisitForm(@PathVariable Long petId, Model model) {
+    public String initNewVisitForm(@PathVariable Long petId, Model model)
+    {
         return "pets/createOrUpdateVisitForm";
     }
 
     // Spring MVC calls method loadPetWithVisit(...) before processNewVisitForm is called
     @PostMapping("/owners/{ownerId}/pets/{petId}/visits/new")
-    public String processNewVisitForm(@Valid Visit visit, BindingResult result) {
-        if (result.hasErrors()) {
+    public String processNewVisitForm(@Valid Visit visit, BindingResult result)
+    {
+        if (result.hasErrors())
+        {
             return "pets/createOrUpdateVisitForm";
-        } else {
+        } else
+        {
             visitService.save(visit);
             return "redirect:/owners/{ownerId}";
         }
