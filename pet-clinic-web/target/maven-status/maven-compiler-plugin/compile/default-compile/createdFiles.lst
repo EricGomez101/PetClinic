@@ -1,5 +1,6 @@
 app/petclinic/PetClinicApplication.class
 app/petclinic/controllers/VisitController.class
+app/petclinic/controllers/VisitController$1.class
 app/petclinic/formatters/PetTypeFormatter.class
 app/petclinic/controllers/IndexController.class
 app/petclinic/controllers/VetController.class
