@@ -4,6 +4,7 @@ app/petclinic/services/OwnerService.class
 app/petclinic/services/springdatajpa/VetJPAService.class
 app/petclinic/services/map/PetServiceMap.class
 app/petclinic/models/Pet.class
+app/petclinic/services/PetTypeService.class
 app/petclinic/models/Vet.class
 app/petclinic/models/PetType.class
 app/petclinic/services/springdatajpa/VisitJPAService.class
@@ -34,7 +35,6 @@ app/petclinic/repositories/VisitRepository.class
 app/petclinic/services/springdatajpa/PetJPAService.class
 app/petclinic/models/Vet$VetBuilder.class
 app/petclinic/models/Person.class
-app/petclinic/services/PetTypeSevice.class
 app/petclinic/models/PetType$PetTypeBuilder.class
 app/petclinic/services/SpecialtyService.class
 app/petclinic/services/VetService.class

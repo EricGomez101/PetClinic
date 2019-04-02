@@ -1,5 +1,8 @@
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/controllers/PetController.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/controllers/OwnerController.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/bootstrap/DataInit.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/controllers/IndexController.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/formatters/PetTypeFormatter.java
+/home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/controllers/VisitController.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/PetClinicApplication.java
 /home/eric/Documents/Java/DevGuru/spring5/pet-clinic/pet-clinic-web/src/main/java/app/petclinic/controllers/VetController.java

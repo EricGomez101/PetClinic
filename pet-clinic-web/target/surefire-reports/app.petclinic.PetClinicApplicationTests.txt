@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: app.petclinic.PetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.05 s - in app.petclinic.PetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.501 s - in app.petclinic.PetClinicApplicationTests

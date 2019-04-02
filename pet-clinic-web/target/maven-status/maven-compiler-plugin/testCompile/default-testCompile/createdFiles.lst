@@ -1,2 +1,4 @@
+app/petclinic/controllers/VisitControllerTest.class
 app/petclinic/PetClinicApplicationTests.class
 app/petclinic/controllers/OwnerControllerTest.class
+app/petclinic/controllers/PetControllerTest.class
