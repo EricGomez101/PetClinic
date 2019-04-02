@@ -53,11 +53,11 @@ public class DataInit implements CommandLineRunner
         Specialty savedRadiology = specialtyService.save(radiology);
 
         Specialty surgery = new Specialty();
-        radiology.setDescription("surgery");
+        surgery.setDescription("Surgery");
         Specialty savedSurgery = specialtyService.save(surgery);
 
         Specialty dentistry = new Specialty();
-        radiology.setDescription("dentistry");
+        dentistry.setDescription("dentistry");
         Specialty savedDentistry = specialtyService.save(dentistry);
 
         System.out.println("Loaded Specialty's");
@@ -112,9 +112,10 @@ public class DataInit implements CommandLineRunner
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setFname("Sam");
-        vet2.setLname("ace");
+        vet2.setFname("Jesse");
+        vet2.setLname("Porter");
         vet2.getSpecialtys().add(savedSurgery);
+        vet2.getSpecialtys().add(savedRadiology);
 
         vetService.save(vet2);
 
